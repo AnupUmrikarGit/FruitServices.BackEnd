@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E4E70717-507C-4853-ADD4-F16F6BD4443A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitServices.API", "FruitServices.API\FruitServices.API.csproj", "{00305F39-ACBB-4458-BA67-DC82017ABCEF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FruitServices.Application", "FruitServices.Application\FruitServices.Application.csproj", "{31766534-BB0A-4844-9B19-FC8C73484F0B}"
