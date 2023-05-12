@@ -46,11 +46,7 @@ builder.Services.AddHttpClient("Fruityvice", httpClient =>
 builder.Services.AddHttpContextAccessor();
 
 builder.Host.UseSerilog(((ctx, lc) =>
-                                {
-                                    //ctx.Configuration.GetSection("Serilog").GetSection("WriteTo").GetChildren().First().GetSection("Args").GetSection("connectionString").Value = ctx.Configuration["StorageConnection"];
-                                    //ctx.Configuration.GetSection("Serilog").GetSection("WriteTo").GetChildren().Take(2).Last().GetSection("Args").GetSection("InstrumentationKey").Value = ctx.Configuration["ApplicationInsightsInstrumentationKey"];
-                                    //lc.Enrich.WithProperty("ApplicationName", builder.Configuration["ApplicationName"] );
-                                    //lc.Enrich.WithCustomProperties();                                
+                                {                                
                                     lc.ReadFrom.Configuration(ctx.Configuration);
 
                                 }));
